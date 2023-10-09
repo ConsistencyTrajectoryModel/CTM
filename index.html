@@ -147,7 +147,7 @@
         <h2 class="title is-3">TL;DR</h2>
         <div class="content has-text-justified">
           <p>
-              For single-step diffusion model sampling, our new model, <font color="#ff6a00">C</font>onsistency <font color="#ff6a00">T</font>rajectory <font color="#ff6a00">M</font>odel, achieves SOTA on CIFAR-10 (FID 1.73) and ImageNet 64x64 (FID 1.98). <font color="#ff6a00">CTM</font> offers diverse sampling options and balances computational budget with sample fidelity effectively.
+              For single-step diffusion model sampling, our new model, <font color="#ff6a00">C</font>onsistency <font color="#ff6a00">T</font>rajectory <font color="#ff6a00">M</font>odel, achieves SOTA on CIFAR-10 (FID 1.73) and ImageNet 64x64 (FID 1.92). <font color="#ff6a00">CTM</font> offers diverse sampling options and balances computational budget with sample fidelity effectively.
           </p>
         </div>
       </div>
@@ -186,7 +186,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Consistency Models (CM) (Song et al., 2023) accelerate score-based diffusion model sampling at the cost of sample quality but lack a natural way to trade-off quality for speed. To address this limitation, we propose <font color="#ff6a00"><b>C</b></font>onsistency <font color="#ff6a00"><b>T</b></font>rajectory <font color="#ff6a00"><b>M</b></font>odel (<font color="#ff6a00"><b>CTM</b></font>), a generalization encompassing CM and score-based models as special cases. <font color="#ff6a00">CTM</font> trains a single neural network that can -- in a single forward pass -- output scores (i.e., gradients of log-density) and enables unrestricted traversal between any initial and final time along the Probability Flow Ordinary Differential Equation (ODE) in a diffusion process. <font color="#ff6a00">CTM</font> enables the efficient combination of adversarial training and denoising score matching loss to enhance performance and achieves new state-of-the-art FIDs for single-step diffusion model sampling on CIFAR-10 (FID 1.73) and ImageNet at 64X64 resolution (FID 1.98). <font color="#ff6a00">CTM</font> also enables a new family of sampling schemes, both deterministic and stochastic, involving long jumps along the ODE solution trajectories. It consistently improves sample quality as computational budgets increase, avoiding the degradation seen in CM. Furthermore, <font color="#ff6a00">CTM</font>'s access to the score accommodates all diffusion model inference techniques, including exact likelihood computation.
+            Consistency Models (CM) (Song et al., 2023) accelerate score-based diffusion model sampling at the cost of sample quality but lack a natural way to trade-off quality for speed. To address this limitation, we propose <font color="#ff6a00"><b>C</b></font>onsistency <font color="#ff6a00"><b>T</b></font>rajectory <font color="#ff6a00"><b>M</b></font>odel (<font color="#ff6a00"><b>CTM</b></font>), a generalization encompassing CM and score-based models as special cases. <font color="#ff6a00">CTM</font> trains a single neural network that can -- in a single forward pass -- output scores (i.e., gradients of log-density) and enables unrestricted traversal between any initial and final time along the Probability Flow Ordinary Differential Equation (ODE) in a diffusion process. <font color="#ff6a00">CTM</font> enables the efficient combination of adversarial training and denoising score matching loss to enhance performance and achieves new state-of-the-art FIDs for single-step diffusion model sampling on CIFAR-10 (FID 1.73) and ImageNet at 64X64 resolution (FID 1.92). <font color="#ff6a00">CTM</font> also enables a new family of sampling schemes, both deterministic and stochastic, involving long jumps along the ODE solution trajectories. It consistently improves sample quality as computational budgets increase, avoiding the degradation seen in CM. Furthermore, <font color="#ff6a00">CTM</font>'s access to the score accommodates all diffusion model inference techniques, including exact likelihood computation.
           </p>
         </div>
       </div>
@@ -205,7 +205,7 @@
         <!-- Your image here -->
         <center><img src="static/images/all_sample_comparisons.svg" alt="MY ALT TEXT" width="960" height="639"/></center>
         <h2 class="subtitle has-text-centered">
-          Comparison of samples: EDM (FID 2.44) with NFE 79; <font color="#ff6a00">CTM</font> (FID 1.98) with NFE 1; <font color="#ff6a00">CTM</font> (FID 1.79) with NFE 2; CM (FID 6.20) with NFE 1.
+          Comparison of samples: EDM (FID 2.44) with NFE 79; <font color="#ff6a00">CTM</font> (FID 1.92) with NFE 1; <font color="#ff6a00">CTM</font> (FID 1.79) with NFE 2; CM (FID 6.20) with NFE 1.
         </h2>
       </div>
       <div class="item">
